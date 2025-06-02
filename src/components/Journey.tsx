@@ -24,13 +24,13 @@ const educationData = [
 
 const experienceData = [
   {
-    title: "Software Engineer ",
+    title: "Software Engineer Intern",
     role: "iZet E-Payments Pvt Ltd",
-    year: "Present",
+    year: "2025",
     shortDescription: "Developed full-stack applications...",
     fullDescription:
       "I am working on and developing full-stack applications for various real-time projects, gaining hands-on experience in both front-end and back-end technologies.",
-    skills: "Skills: ReactJS - NodeJS - MySql",
+    skills: "Skills: Web Development",
     logo: Images.InstitutionLogos.Izet,
   },
   {

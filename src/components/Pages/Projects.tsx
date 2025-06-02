@@ -40,13 +40,13 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'AI Med-Assist',
+      title: 'Personalized AI Med-Assist',
       description: 'Personalized AI-Med Assist is an intelligent healthcare companion designed to offer tailored medical support.It uses NLP to analyze symptoms and deliver accurate, real-time health recommendations.Integrated with ML models and IoT devices, it aids in early diagnosis and chronic disease management.The system ensures secure, patient-centric care through a user-friendly web interface.',
       image: Images.ProjectThumbs.AI_Med_Assist,
-      technologies: ['MongoDB', 'Express', 'React', 'Node', 'Python', 'IoT'],
-      tags: ['Full-Stack', 'AI Med Bot'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      technologies: ['MongoDB', 'Express', 'React', 'Node', 'Python', 'Flask'],
+      tags: ['MERN-Stack', 'AI Med Bot'],
+      githubUrl: 'https://github.com/AI-MED-ASSIST/HealTron',
+      liveUrl: 'https://ai-med-assist.github.io/HealTron/',
       showTeam: true,
       teamMembers: [{ name: 'Deenathayalan C K', image: Images.Teammembers.member2 }]
     },
@@ -56,8 +56,8 @@ const Projects = () => {
       image: Images.ProjectThumbs.GeminiGPT,
       technologies: ['React', 'Vite', 'Java Script', 'Tailwind CSS', 'Gemini API'],
       tags: ['React', 'App Clone'],
-      githubUrl: 'https://github.com/DineshhNT/MySync.',
-      liveUrl: 'https://dineshhnt.github.io/MySync./',
+      githubUrl: 'https://github.com/DineshhNT/GeminiGPT',
+      liveUrl: 'https://dineshhnt.github.io/GeminiGPT/',
       showTeam: false
     },
     {
@@ -66,12 +66,12 @@ const Projects = () => {
       image: Images.ProjectThumbs.MySync,
       technologies: ['React', 'Vite', 'Tailwind CSS', 'TypeScript', 'EmailJS'],
       tags: ['React', 'Portfolio'],
-      githubUrl: 'https://github.com/DineshhNT/MySync.',
-      liveUrl: 'https://dineshhnt.github.io/MySync./',
+      githubUrl: 'https://github.com/DineshhNT/MySync',
+      liveUrl: 'https://dineshhnt.github.io/MySync/',
       showTeam: false
     },
     {
-      title: 'Deep Sight',
+      title: 'Glaucoma Disease Detection',
       description: 'This project uses Convolutional Neural Networks (CNN) to detect glaucoma from retinal images.It automates early diagnosis by analyzing visual patterns linked to glaucoma.Trained on labeled eye datasets, the model achieves high detection accuracy.Built with Python, TensorFlow, and OpenCV, it assists in preventing vision loss.',
       image: Images.ProjectThumbs.DeepSight,
       technologies: ['CNN', 'Python', 'TensorFlow', 'Machine Learning', 'Deep Learning'],
@@ -91,7 +91,7 @@ const Projects = () => {
       showTeam: false
     },
     {
-      title: 'Sentiment X',
+      title: 'Sentiment Analysis using Python',
       description: 'This project analyzes customer reviews from Flipkart and Amazon to determine sentiment polarity.It classifies reviews as positive, negative, or neutral using NLP techniques.Python libraries like NLTK and Scikit-learn were used for preprocessing and modeling.The insights help businesses understand user satisfaction and improve strategies.Visualizations like word clouds and sentiment charts enhance interpretability.',
       image: Images.ProjectThumbs.SentimentX,
       technologies: ['Python', 'NLP', 'Word Cloud', 'TensorFlow', 'Machine Learning'],
@@ -102,7 +102,7 @@ const Projects = () => {
       teamMembers: [{ name: 'Deenathayalan C K', image: Images.Teammembers.member2 }]
     },
     {
-      title: 'Code Flux',
+      title: 'Encoder Decoder Architecture',
       description: 'This project implements an Encoder-Decoder architecture using Python for sequence-to-sequence tasks.It is designed to handle transformations like language translation or number-to-word conversion.The encoder processes the input sequence into a fixed representation.The decoder then generates an output sequence based on that representation.Built using TensorFlow/Keras, it showcases the fundamentals of sequence modeling in AI.',
       image: Images.ProjectThumbs.ED,
       technologies: ['Python', 'Encoder', 'Decoder', 'AI', 'Transformation'],
