@@ -120,7 +120,7 @@ function Home() {
       showTeam: false
     },
     {
-      title: 'Deep Sight',
+      title: 'Glaucoma Detection',
       description: 'This project uses Convolutional Neural Networks (CNN) to detect glaucoma from retinal images.It automates early diagnosis by analyzing visual patterns linked to glaucoma.Trained on labeled eye datasets, the model achieves high detection accuracy.Built with Python, TensorFlow, and OpenCV, it assists in preventing vision loss.',
       image: Images.ProjectThumbs.DeepSight,
       technologies: ['CNN', 'Python', 'TensorFlow',  'Deep Learning'],
