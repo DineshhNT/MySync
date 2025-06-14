@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Images from "./Images";
 
 const Hero = () => {
-  const roles = ["AI/ML Developer", "Front-End Developer"];
+  const roles = ["AI/ML Engineer", "Full-Stack Developer"];
   const [roleIndex, setRoleIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -82,7 +82,7 @@ const Hero = () => {
             <motion.a
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              href="https://www.linkedin.com/in/dinesh-nt-20b0b6256/"
+              href="https://www.linkedin.com/in/dinesh-n-t-20b0b6256/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 sm:p-3 rounded-full bg-blue-600 text-white hover:bg-blue-700"

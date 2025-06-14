@@ -38,7 +38,7 @@ const Footer = () => {
           className="p-2 sm:p-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600">
           <Github size={20} className="sm:w-6 sm:h-6" />
         </a>
-        <a href="https://www.linkedin.com/in/dinesh-nt-20b0b6256/" target="_blank" rel="noopener noreferrer" 
+        <a href="https://www.linkedin.com/in/dinesh-n-t-20b0b6256/" target="_blank" rel="noopener noreferrer" 
           className="p-2 sm:p-3 rounded-full bg-blue-600 text-white hover:bg-blue-700">
           <Linkedin size={20} className="sm:w-6 sm:h-6" />
         </a>
