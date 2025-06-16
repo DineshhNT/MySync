@@ -88,11 +88,6 @@ npm run build
 
 The output will be in the `dist/` folder.
 
-## Author
-
-Dinesh N T
-GitHub: [https://github.com/DineshhNT](https://github.com/DineshhNT)
-LinkedIn: [https://www.linkedin.com/in/dinesh-nt](https://www.linkedin.com/in/dinesh-nt)
 
 ## License
 
