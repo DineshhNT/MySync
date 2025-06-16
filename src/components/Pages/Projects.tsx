@@ -86,8 +86,8 @@ const Projects = () => {
       image: Images.ProjectThumbs.Mushroom_Classifier,
       technologies: ['Python', 'Streamlit', 'Deep Learning', 'Machine Learning'],
       tags: ['Mushroom Classification', 'Deep Learning'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/DineshhNT/MushroomClassifier',
+      liveUrl: 'https://github.com/DineshhNT',
       showTeam: false
     },
     {
