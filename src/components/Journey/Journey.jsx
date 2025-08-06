@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react"; // No longer need useEffect
 import { motion, AnimatePresence } from "framer-motion";
 import { JourneyData } from "../../constants";
 
@@ -18,22 +18,8 @@ const Journey = () => {
     }
   };
 
-  // Auto collapse after 1 min
-  useEffect(() => {
-    let timer;
-    if (expandedEduIndex !== null) {
-      timer = setTimeout(() => setExpandedEduIndex(null), 60000);
-    }
-    return () => clearTimeout(timer);
-  }, [expandedEduIndex]);
-
-  useEffect(() => {
-    let timer;
-    if (expandedExpIndex !== null) {
-      timer = setTimeout(() => setExpandedExpIndex(null), 60000);
-    }
-    return () => clearTimeout(timer);
-  }, [expandedExpIndex]);
+  // The useEffect hooks for auto-collapse have been removed
+  // as they are the most likely source of deployment-specific issues.
 
   return (
     <section

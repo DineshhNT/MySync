@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full pt-16 sm:pb-16 md:pb-20 px-4 sm:px-8 lg:px-20 scroll-mt-20"
+      className="relative w-full pt-10 sm:pb-16 md:pb-20 px-4 sm:px-8 lg:px-20 scroll-mt-20"
     >
       {/* Title + Quote */}
       <div className="text-center mb-10">

@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {MyDetails} from "../../constants"; // Corrected path and filename
-import { SocialLogos } from "../../constants"; // Correct import path
+import { MyDetails } from "../../constants";
+import { SocialLogos } from "../../constants";
 
 // This is the new variant for the name animation, applying to the whole text
 const nameVariants = {
   hidden: { opacity: 0, scale: 0.5 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     scale: 1,
     transition: {
       duration: 1.0,
@@ -30,12 +30,13 @@ const Hero = () => {
       id="hero"
       className="relative w-full h-screen pb-10 text-white flex flex-col justify-center items-center overflow-hidden bg-skills-gradient clip-path-custom px-4"
     >
-      {/* Mobile/Tablet Photo Display - Now with less margin at the bottom */}
-      <div className="block lg:hidden z-10 mb-2">
+      {/* Mobile Photo Display - Visible on mobile/small screens, hidden on tablets and up */}
+      <div className="block md:hidden z-10 mb-6">
         <img
           src={MyDetails[0].profileImage}
           alt="Dinesh N T"
-          className="w-36 h-36 sm:w-42 sm:h-42 rounded-2xl border  border-gray-900 shadow-lg object-cover"
+          // Responsive sizing for the image on mobile and small screens
+          className="w-42 h-42 sm:w-48 sm:h-48 rounded-2xl border border-gray-900 shadow-lg object-cover"
         />
       </div>
 
@@ -56,7 +57,7 @@ const Hero = () => {
             variants={nameVariants}
             initial="hidden"
             animate="visible"
-            className="text-3xl pt-4 sm:text-4xl md:text-8xl  font-bold text-gray-200 tracking-widest font-serif whitespace-nowrap"
+            className="text-3xl pt-4 sm:text-4xl md:text-6xl lg:text-8xl font-bold text-gray-200 tracking-widest font-serif whitespace-nowrap"
           >
             DINESH N T
           </motion.h1>
@@ -74,8 +75,8 @@ const Hero = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.8, delay: 2 }} // 
-          className="text-base sm:text-xs md:text-xl pt-4 font-medium text-gray-400"
+          transition={{ duration: 1.8, delay: 2 }}
+          className="text-base sm:text-lg md:text-xl pt-4 font-medium text-gray-400"
         >
           AI/ML Enthusiast | Front-End Developer
         </motion.p>
@@ -84,8 +85,8 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 2.5 }} // Social links appear last
-          className="flex justify-center gap-6 mt-20"
+          transition={{ duration: 1, delay: 2.5 }}
+          className="flex justify-center gap-6 mt-10"
         >
           {/* LinkedIn Icon */}
           <motion.a
@@ -96,7 +97,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
             transition={{ delay: 2.5 }}
-            className="w-14 h-14 sm:w-18 sm:h-18 flex border border-gray-700 items-center justify-center rounded-full bg-gray-800/50 hover:bg-gray-700/70 transition-colors duration-300 transform hover:scale-110"
+            className="w-14 h-14 sm:w-16 sm:h-16 flex border border-gray-700 items-center justify-center rounded-full bg-gray-800/50 hover:bg-gray-700/70 transition-colors duration-300 transform hover:scale-110"
           >
             <img src={SocialLogos.linkedin} alt="LinkedIn" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full" />
           </motion.a>
@@ -110,9 +111,9 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
             transition={{ delay: 2.7 }}
-            className="w-14 h-14 sm:w-18 sm:h-18 flex border border-gray-700 items-center justify-center item-center rounded-full bg-gray-800/50 hover:bg-gray-700/70 transition-colors duration-300 transform hover:scale-110"
+            className="w-14 h-14 sm:w-16 sm:h-16 flex border border-gray-700 items-center justify-center rounded-full bg-gray-800/50 hover:bg-gray-700/70 transition-colors duration-300 transform hover:scale-110"
           >
-            <img src={SocialLogos.github} alt="GitHub" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full " />
+            <img src={SocialLogos.github} alt="GitHub" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full" />
           </motion.a>
 
           {/* Instagram Icon */}
@@ -124,7 +125,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
             transition={{ delay: 2.9 }}
-            className="w-14 h-14 sm:w-18 sm:h-18 flex border border-gray-700 items-center justify-center rounded-full bg-gray-800/50 hover:bg-gray-700/70 transition-colors duration-300 transform hover:scale-110"
+            className="w-14 h-14 sm:w-16 sm:h-16 flex border border-gray-700 items-center justify-center rounded-full bg-gray-800/50 hover:bg-gray-700/70 transition-colors duration-300 transform hover:scale-110"
           >
             <img src={SocialLogos.instagram} alt="Instagram" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full" />
           </motion.a>
