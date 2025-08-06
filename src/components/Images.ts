@@ -1,4 +1,4 @@
-import Heroimage from "../../images/My/Heroimage.jpg";
+
 
 import cv from "../../assests/DINESH N T CV.pdf";
 
@@ -45,7 +45,7 @@ import SentimentX from "../../images/ProjectThumb/Sentiment X.jpg";
 import ED from "../../images/ProjectThumb/E&D.jpg";
 import ViewAllProject from "../../images/ViewAllProject.png";
 
-import Hero_image from "../../images/My/Hero_image.jpg";
+import Heroimage from "../../images/My/Heroimage.png";
 import member2 from "../../images/Teammembers/Deena.jpeg";
 import member3 from "../../images/Teammembers/Priyanka.jpg";
 
@@ -94,7 +94,7 @@ const Images: ImagesType = {
     ED,
   },
 
-  Teammembers: { Hero_image, member2, member3},
+  Teammembers: { Heroimage, member2, member3},
 
   Dlogo,
   ViewAllProject,
