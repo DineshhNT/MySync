@@ -12,43 +12,37 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-
-
-      // Send email
-      const serviceID = 'Your_serviceID';
-      const templateID = 'Your_templateID';
-      const publicKey = 'Your_publicKey';
-
+   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value,
+      });
+    };
+  
+    const handleSubmit = (e: React.FormEvent) => {
+      e.preventDefault();
+      const serviceID = import.meta.env.VITE_SERVICEID;
+      const templateID = import.meta.env.VITE_TEMPLATEID;
+      const publicKey = import.meta.env.VITE_PUBLICKEY;
+  
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
       };
 
-      await emailjs.send(serviceID, templateID, templateParams, publicKey);
-      
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
+      emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        alert('Failed to send message. Please try again.');
+      });
   };
+
 
   return (
     <form onSubmit={handleSubmit} className="max-w-lg mx-auto px-4 sm:px-6">

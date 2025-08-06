@@ -1,108 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --gradient-background-start: rgb(108, 0, 162);
-    --gradient-background-end: rgb(0, 17, 82);
-    --first-color: 18, 113, 255;
-    --second-color: 221, 74, 255;
-    --third-color: 100, 220, 255;
-    --fourth-color: 200, 50, 50;
-    --fifth-color: 180, 180, 50;
-    --pointer-color: 140, 100, 255;
-    --size: 80%;
-    --blending-value: hard-light;
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+    .clip-path-custom {
+      clip-path: polygon(0 0, 100% 0, 100% 98%, 85% 95%, 0 100%);
+    }
+    .clip-path-custom-2 {
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 25% 95%, 0 100%);
+      }
+    .clip-path-custom-3 {
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%);
+      }
   }
-  
-  .gradients-container div {
-    position: absolute;
-    mix-blend-mode: var(--blending-value);
-    width: var(--size);
-    height: var(--size);
-    top: calc(50% - var(--size) / 2);
-    left: calc(50% - var(--size) / 2);
-    transform-origin: center center;
-    opacity: 100%;
+@keyframes lineSlideLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  @keyframes animate-first {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  @keyframes animate-second {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.3);
-    }
-    100% {
-      transform: scale(1);
-    }
+}
+
+@keyframes lineSlideRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  @keyframes animate-third {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.4);
-    }
-    100% {
-      transform: scale(1);
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  @keyframes animate-fourth {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
+}
+
+@keyframes nameFadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
   }
-  
-  @keyframes animate-fifth {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .animate-first {
-    animation: animate-first 6s infinite alternate;
-  }
-  
-  .animate-second {
-    animation: animate-second 7s infinite alternate;
-  }
-  
-  .animate-third {
-    animation: animate-third 8s infinite alternate;
-  }
-  
-  .animate-fourth {
-    animation: animate-fourth 9s infinite alternate;
-  }
-  
-  .animate-fifth {
-    animation: animate-fifth 10s infinite alternate;
-  }
-  
+}
+
+.animate-lineLeft {
+  animation: lineSlideLeft 1s ease-out forwards;
+}
+
+.animate-lineRight {
+  animation: lineSlideRight 1s ease-out forwards;
+}
+
+.animate-nameFadeIn {
+  animation: nameFadeInUp 1s ease-out 1s forwards;
+  opacity: 0;
+}
