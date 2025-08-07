@@ -214,11 +214,11 @@ export const JourneyData = [
 export const projects = [
   {
     id: 0,
-    title: "Personalized AI - Med Assist",
+    title: "HealTron | AI-Med Assist",
     description:
       "HealTron is a personalized AI-powered medical assistant web application that helps users manage chronic diseases by combining natural language processing (NLP) for symptom analysis, machine learning models for early disease detection, and real-time IoT data integration. It provides an interactive chatbot interface where users can describe their health conditions, receive smart diagnostics, and get tailored recommendations. HealTron securely stores user health data on the cloud, supports real-time monitoring through connected devices, and ensures privacy compliance. By integrating modern AI, ML, and IoT technologies into one platform, HealTron aims to make healthcare more accessible, accurate, and user-friendly for patients anytime, anywhere.",
     image: Healtron,
-    tags: ["MongoDB", "Express", "React", "Node", "AI/ML", "Python"],
+    tags: ["MongoDB", "Express", "React", "Node", "AI","Machine Learning", "Python"],
     // Add the extraTags property here
     extraTags: ["Flask","NLP Bot","TailwindCSS"],
     github: "https://github.com/AI-MED-ASSIST/HealTron",
@@ -234,6 +234,7 @@ export const projects = [
       "MySync is a modern, fully responsive personal portfolio web application designed to showcase my skills, projects, and professional journey in a clean and engaging way. Built with React, Vite, and Tailwind CSS, it combines smooth animations, stylish UI components, and reusable layouts to create a seamless user experience across all devices. This portfolio highlights my AI/ML, web development, and full-stack capabilities, featuring interactive project previews, detailed project pages, and dynamic sections for skills, experience, and education. The design emphasizes visual clarity and performance while making it easy for visitors, recruiters, and collaborators to explore my work, connect with me, and stay updated with my latest contributions and achievements.",
     image: Mysync,
     tags: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    extraTags: [""],
     github: "https://github.com/DineshhNT/MySync",
     webapp: "https://dineshhnt.github.io/MySync/",
     domain: "Fullstack",
@@ -246,7 +247,7 @@ export const projects = [
     description:
       "Sentimental Analysis using Python implements a Natural Language Processing (NLP) pipeline to analyze and classify the sentiment of product reviews collected from popular e-commerce platforms like Flipkart and Amazon. It processes large volumes of customer feedback by performing data cleaning, tokenization, and vectorization. Then, it trains machine learning models to detect whether the sentiment expressed in a review is positive, negative, or neutral. Visualizations such as word clouds and sentiment distribution graphs help interpret customer opinions.",
     image: Sentiment,
-    tags: ["AI/ML", "Python", "NLTK", "WordCloud"],
+    tags: ["Machine Learning", "Python", "NLTK", "WordCloud"],
     github: "https://github.com/DineshhNT/SentimentalAnalysisUsingPython",
     webapp: "https://github.com/DineshhNT/SentimentalAnalysisUsingPython",
     domain: "AI/ML",
@@ -259,7 +260,7 @@ export const projects = [
     description:
       "The Gemini Clone is an advanced conversational AI interface developed using ReactJS, designed to replicate the real-time interactivity of Google's Gemini chatbot. It allows users to engage in seamless conversations with the Gemini API, rendering streaming responses in a dynamic and fluid chat experience. Built with a focus on responsiveness and performance, the application uses modular React components, Tailwind CSS for a modern UI, and efficient API handling to ensure fast, intuitive communication. This project showcases a practical implementation of large language model integration, reflecting strong frontend development and AI interaction skills.",
     image: Gemini,
-    tags: ["React JS", "Node.js", "NPM", "Validation"],
+    tags: ["React JS", "Tailwind CSS", "API", "JavaScript"],
     github: "https://github.com/DineshhNT/GeminiGPT",
     webapp: "https://dineshhnt.github.io/GeminiGPT/",
     domain: "Fullstack",
@@ -272,7 +273,7 @@ export const projects = [
     description:
       "This project leverages Convolutional Neural Networks (CNNs) to detect glaucoma from retinal fundus images with high accuracy. Developed using Python and Keras, the system processes a balanced dataset of healthy and glaucomatous eyes to train a robust classification model. Preprocessing techniques such as contrast enhancement and noise reduction were applied to optimize image quality. The project includes performance visualization using ROC curves and precision-recall metrics, making it a valuable solution for early diagnosis in ophthalmology. It reflects practical experience in medical AI, deep learning, and image-based health diagnostics.",
     image: Glaucoma,
-    tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
+    tags: ["Machine Learning", "Python", "CNN",],
     github: "https://github.com/DineshhNT/GlaucomaDetectionUsingCNN",
     webapp: "https://github.com/DineshhNT/GlaucomaDetectionUsingCNN",
     domain: "AI/ML",
@@ -285,7 +286,7 @@ export const projects = [
     description:
       "The Mushroom Classifier is a machine learning web application developed using Python and Streamlit, aimed at predicting whether a mushroom is edible or poisonous based on its physical characteristics. The project utilizes a cleaned version of the UCI Mushroom Dataset, and several supervised learning algorithms were trained and evaluated, including Random Forest and Decision Tree classifiers, with the Random Forest model achieving high accuracy. The user-friendly Streamlit interface allows users to input mushroom features and receive real-time predictions instantly. This project demonstrates expertise in end-to-end ML development, model evaluation, and rapid deployment using lightweight web frameworks.",
     image: Mushroom,
-    tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
+    tags: ["Machine Learning", "Python", "Streamlit",],
     github: "https://github.com/DineshhNT/MushroomClassifier",
     webapp: "https://github.com/DineshhNT/MushroomClassifier",
     domain: "AI/ML",
