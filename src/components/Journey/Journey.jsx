@@ -11,7 +11,7 @@ const Journey = () => {
   const experiences = JourneyData.filter((item) => item.type === "experience");
 
   const toggleExpand = (index) => {
-    if (activeTab === "education") {
+    if (activeTab === "experience") {
       setExpandedEduIndex(expandedEduIndex === index ? null : index);
     } else {
       setExpandedExpIndex(expandedExpIndex === index ? null : index);
