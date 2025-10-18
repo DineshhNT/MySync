@@ -45,6 +45,7 @@ import SGNHSSLogo from '../images/Institutionlogo/school_logo.png';
 import KCELogo from '../images/Institutionlogo/college_logo.png';
 import InternPeLogo from '../images/Institutionlogo/internpe_logo.jpeg';
 import IZetLogo from '../images/Institutionlogo/izet_logo.jpeg';
+import YectraLogo from '../images/Institutionlogo/yectra_logo.jpeg';
 
 import Instagram from '../images/Social Icons/Instagram.png';
 import LinkedIn from '../images/Social Icons/LinkedIn (1).png';
@@ -145,6 +146,26 @@ export const SocialLogos =
 // ✅ Journey Data — CORRECTED with `type`
 export const JourneyData = [
   // ✅ Experience items
+  {
+    id: 0,
+    img: YectraLogo,
+    role: "AI Software Engineer",
+    company: "Yectra Technologies",
+    url: "https://www.yectra.com/",
+    date: "Oct 2025 - PRESENT",
+    desc: "Designing and developing AI-driven software solutions by leveraging machine learning, deep learning, and data-driven techniques. Responsible for model development, integration, and deployment to build scalable, intelligent applications that solve real-world problems.",
+    skills: [
+      "Python",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Deep Learning",
+      "Data Science",
+      "NLP",
+      "Computer Vision",
+      ,
+    ],
+    type: "experience",
+  },
   {
     id: 0,
     img: IZetLogo,
