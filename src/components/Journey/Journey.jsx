@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { JourneyData } from "../../constants";
 
 const Journey = () => {
-  const [activeTab, setActiveTab] = useState("education");
+  const [activeTab, setActiveTab] = useState("experience"); // Default active tab changed to "experience"
   const [expandedEduIndex, setExpandedEduIndex] = useState(null);
   const [expandedExpIndex, setExpandedExpIndex] = useState(null);
 
@@ -11,7 +11,7 @@ const Journey = () => {
   const experiences = JourneyData.filter((item) => item.type === "experience");
 
   const toggleExpand = (index) => {
-    if (activeTab === "experience") {
+    if (activeTab === "education") {
       setExpandedEduIndex(expandedEduIndex === index ? null : index);
     } else {
       setExpandedExpIndex(expandedExpIndex === index ? null : index);
